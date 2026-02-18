@@ -1,0 +1,77 @@
+# Solution and Visual Studio
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# Build folders
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+build/
+publish/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# SQL Server
+*.mdf
+*.ldf
+*.ndf
+*.sqlproj.user
+
+# IIS Express / Hosting
+iisexpress/
+.vs/config/applicationhost.config
+
+# Test Results
+TestResults/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Node
+node_modules/
+
+# Logs and databases
+*.log
+*.db
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+*.pdb
+*.class
+*.cache
+*.vspscc
+*.vssscc
+
+# Publish output
+publish/
+
+# Temporary files
+*.tmp
+*~
+
+# Ignore project-level gitignore to avoid conflicts (if you want this file tracked instead)
+Presentacion.Web/.gitignore

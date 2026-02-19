@@ -1,50 +1,26 @@
-# Prueba de Conocimientos - GestiÛn de Usuarios
+Ôªø## Configuraci√≥n y ejecuci√≥n
 
-## DescripciÛn
-Este proyecto es una aplicaciÛn de ejemplo para la **gestiÛn de usuarios**, desarrollada en **ASP.NET Web Forms** con **WCF** y **SQL Server**.  
-Permite crear, consultar, modificar y eliminar usuarios, aplicando una **arquitectura por capas**:
+### 1Ô∏è‚É£ Configuraci√≥n inicial
 
-- **Capa de PresentaciÛn:** Proyecto Web Forms (`Presentacion.Web`) con formularios de registro y consulta.  
-- **Capa de Negocios:** Servicio WCF (`Negocio.WCF`) que implementa los mÈtodos CRUD.  
-- **Capa de Datos:** Base de datos SQL Server con tabla `Usuario` y procedimiento almacenado `SP_Usuario_CRUD`.
+1. Ejecutar el script SQL ubicado en la carpeta `SQL` para crear la base de datos `prueba`, la tabla `Usuario` y el procedimiento almacenado `SP_Usuario_CRUD`.
+2. Configurar la cadena de conexi√≥n en el archivo `Web.config` del proyecto `Negocio.WCF` bajo la clave `Conexion`.
 
 ---
 
-## CaracterÌsticas
-- Registro de usuarios con validaciones de campos obligatorios.  
-- Consulta de usuarios en una grilla con opciones de **Modificar** y **Eliminar**.  
-- Confirmaciones visuales al agregar, modificar o eliminar usuarios.  
-- Estilo moderno con **Bootstrap** para formularios y grilla.  
+### 2Ô∏è‚É£ Ejecutar el proyecto en Visual Studio
 
----
+1. Abrir la soluci√≥n (`.sln`) en Visual Studio.
+2. Hacer clic derecho sobre la **soluci√≥n** (no sobre un proyecto).
+3. Seleccionar **Propiedades**.
+4. Ir a la opci√≥n **Proyectos de inicio**.
+5. Seleccionar **Varios proyectos de inicio**.
+6. En la columna **Acci√≥n**, seleccionar **Iniciar** para:
+   - `Negocio.WCF`
+   - `Presentacion.Web`
+7. Hacer clic en **Aplicar** y luego en **Aceptar**.
+8. Presionar el bot√≥n verde **Iniciar** (‚ñ∂).
 
-## Requisitos
-- Visual Studio 2019 o superior.  
-- .NET Framework 4.8  
-- SQL Server 2019 o superior.  
-- ConexiÛn configurada en `Web.config` bajo la clave `Conexion`.
+Una vez se abra el navegador:
 
----
-
-## Estructura del proyecto
-- `Presentacion.Web` ñ Contiene las p·ginas Web Forms (`Usuario.aspx`, `UsuarioConsulta.aspx`, `UsuarioModificar.aspx`).  
-- `Negocio.WCF` ñ Contiene el servicio WCF (`UsuarioService.svc`) con los mÈtodos `Agregar`, `Consultar`, `Modificar`, `Eliminar`.  
-- `SQL` ñ Script para crear la base de datos, la tabla `Usuario` y el procedimiento almacenado `SP_Usuario_CRUD`.
-
----
-
-## Uso
-1. Ejecutar el script SQL para crear la base de datos `prueba` y la tabla `Usuario`.  
-2. Configurar la cadena de conexiÛn en `Web.config`.  
-3. Ejecutar la soluciÛn en Visual Studio.  
-4. Acceder a `Usuario.aspx` para crear usuarios.  
-5. Acceder a `UsuarioConsulta.aspx` para ver, modificar o eliminar usuarios.
-
----
-
-## Notas
-- La columna de acciones en la grilla muestra los botones de **Modificar** y **Eliminar**.  
-- Las fechas se muestran en formato `dd/MM/yyyy`.  
-- La aplicaciÛn usa validaciones tanto en el formulario como en la capa de servicios.
-
----
+- Acceder a `Usuario.aspx` para crear usuarios.
+- Acceder a `UsuarioConsulta.aspx` para consultar, modificar o eliminar registros.

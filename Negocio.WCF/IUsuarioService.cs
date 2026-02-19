@@ -9,11 +9,11 @@ using System.Text;
 namespace Negocio.WCF
 {
     
-    [ServiceContract]
-    public interface IUsuarioService
+    [ServiceContract] // la interfaz es un contracto WCF,
+    public interface IUsuarioService // esto declara los metodos nada de logica 
     {
 
-        [OperationContract]
+        [OperationContract] //cada metodo es un contrato de operacion publica
         void Agregar(Usuario usuario);
 
         [OperationContract]

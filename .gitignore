@@ -1,5 +1,5 @@
 # Solution and Visual Studio
-*.sln
+
 *.suo
 *.user
 *.userosscache
@@ -53,7 +53,7 @@ node_modules/
 # Logs and databases
 *.log
 *.db
-*.sql
+
 
 # OS files
 .DS_Store
